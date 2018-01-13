@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>COMPUTER</pattern>
+    <template>lenovo&lt;br/&gt;dell</template>
+  </category>
+
+<category>
+	<pattern>HI *</pattern>
+	<template>Please specify the option for which you have a query.&lt;br/&gt;Motor, Travel, Life, Home 
+	</template>
+</category>
+
+<category>
+	<pattern>HELLO *</pattern>
+	<template>Please specify the option for which you have a query.&lt;br/&gt;Motor, Travel, Life, Home 
+	</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<template>I am afraid, I can only respond to only a few queries at the moment. Appreciate your patience. Please specify the option for which you have a query.&lt;br/&gt;Motor, Travel, Life, Home 
+	</template>
+</category>
+<category>
+	<pattern> * MOTOR * </pattern>
+	<template> 	 OK. Please confirm your Motor Insurance Number. &lt;br/&gt; 
+				(Testing Note: Please enter MOT24352313 at the moment, as the chatbot is not yet ready to capture variables and connect to a database) 
+	</template>
+</category>
+
+<category>
+	<pattern> * TRAVEL * </pattern>
+	<template> 	 Apologies, We are still working to get this ready for making this information available via this channel.&lt;br/&gt; 
+				 Meanwhile you can reach us on 0800800800 to get information about Travel insurance
+	</template>
+</category>
+
+<category>
+
+	<pattern> * LIFE * </pattern>
+	<template> 	 Apologies, We are still working to get this ready for making this information available via this channel.&lt;br/&gt; 
+				 Meanwhile you can reach us on 0800800801 to get information about Life insurance 
+	</template>
+</category>
+
+<category>
+	<pattern> * HOME * </pattern>
+	<template> 	 Apologies, We are still working to get this ready for making this information available via this channel.&lt;br/&gt; 
+				Meanwhile you can reach us on 0800800801 to get information about Life insurance
+	</template>
+</category>
+
+
+<category>
+	<pattern> * MOT24352313 * </pattern>
+	<template> 	 OK, Please specify if below information is correct. &quot;Correct Policy Information&quot; or &quot;Incorrect Policy Information&quot;&lt;br/&gt; 
+					Insurance Policy Number: MOT24352313 	&lt;br/&gt; 
+					Name of Car: Nissan Almera		&lt;br/&gt; 		
+					Registration Number: X99 XYZ		&lt;br/&gt; 	
+					Annual Premium: £457			&lt;br/&gt; 					
+				 Meanwhile you can reach us on 0800800801 to get information about Life insurance </template>
+</category>
+
+<category>
+	<pattern> * CORRECT * </pattern>
+	<template> Thanks. How can I help you with regards to this policy  </template>
+</category>
+
+<category>
+	<pattern> * RENEWAL * </pattern>
+	<template>  The policy is due for renewal on 15th Feb.  &lt;br/&gt; &lt;br/&gt;
+			    Renewal quote is now available for your policy. It is £425 if you are paying annually and £37 with monthly direct debit.&lt;br/&gt; &lt;br/&gt;
+			    I will email you the renewal link Insuree@customeremail.com. You can also make any updates to the policy through this link</template>
+</category>
+
+<category>
+	<pattern> * DUE * </pattern>
+	<template>  The policy is due for renewal on 15th Feb.  &lt;br/&gt; &lt;br/&gt;
+			    Renewal quote is now available for your policy. It is £425 if you are paying annually and £37 with monthly direct debit.&lt;br/&gt; &lt;br/&gt;
+			    I will email you the renewal link Insuree@customeremail.com. You can also make any updates to the policy through this link</template>
+</category>
+
+<category>
+	<pattern> * THANKS * </pattern>
+	<template>  Awesome. Glad to be of help. Is there anything else that I can assist you with today  </template>
+</category>
+	
+
+<category>
+	<pattern> * NO THANKS * </pattern>
+<template>  OK. Looking at your profile, there are some really great offers that you are eligible for as an existing customer. Would you you be interested to have a look at them.</template>
+</category>
+
+
+<category>
+	<pattern> * YES I AM INTERESTED * </pattern>
+<template>  Here are the top 3 offers. If you are interested in these offers please respond with &quot;Offer 1&quot; &quot;Offer 2&quot; &quot;Offer 3&quot; or if you would like to speak to someone specify &quot;More offers&quot; or your specific area of interest.
+Offer 1 - 20% discount on your Home insurance or Travel Insurance or Life Insurance if continue with your Motor insurance&lt;br/&gt; &lt;br/&gt;
+Offer 2 - 20% discount on Multi Car Insurance&lt;br/&gt; &lt;br/&gt;
+Offer 3 - 5 % discount for adding another driver on your current vehicle covered by us
+</template>
+</category>
+
+
+<category>
+	<pattern> * OFFER 1 * </pattern>
+<template>  Fantastic! Follow &lt;a href=&quot;https://www.xyzbank.com/existingCustomer&quot;&gt;this link&lt;/a&gt; to avail your offer and specify "HACK20" at the end to redeem your discount </template>
+</category>
+
+<category>
+	<pattern> * OFFER 2 * </pattern>
+<template>  Fantastic! Follow &lt;a href=&quot;https://www.xyzbank.com/multicar&quot;&gt;this link&lt;/a&gt; to avail your offer and specify "HACK20" at the end to redeem your discount </template>
+</category>
+
+<category>
+	<pattern> * OFFER 3 * </pattern>
+<template>  Fantastic! Follow &lt;a href=&quot;https://www.xyzbank.com/additionalDriver&quot;&gt;this link&lt;/a&gt; to avail your offer and specify "HACK05" at the end to redeem your discount </template>
+</category>
+
+<category>
+	<pattern> * MORE OFFERS * </pattern>
+<template>  Sure. We will arrange for someone to call you on your mobile to book an appointment for discussing more offers </template>
+</category>
+
+
+<category>
+	<pattern> * LATER * </pattern>
+<template>  Sure. No worries. Thanks for connecting with us. Have a good day! Bye! </template>
+</category>
+
+</aiml>
